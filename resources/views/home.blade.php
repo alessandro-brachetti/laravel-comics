@@ -5,6 +5,9 @@
 </div>
 <section id="comics">
   <div class="container">
+    <div class="title-section">
+      <h2 class="uppercase"> current series</h2>
+    </div>
     @include('comics')
   </div>
   <div class="button">
@@ -30,7 +33,7 @@
       <a class="uppercase" href="#">comic shop locator</a>
     </div>
     <div class="card-shop">
-      <img src="./img/buy-dc-power-visa.svg" alt="img DC">
+      <img src="/img/buy-dc-power-visa.svg" alt="img DC">
       <a class="uppercase" href="#">dc power visa</a>
     </div>
   </div>

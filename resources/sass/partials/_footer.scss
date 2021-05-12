@@ -1,0 +1,97 @@
+footer {
+  .footer-top {
+    background-size: cover;
+    .container {
+      display: flex;
+      .footer-top-left {
+        width: 50%;
+        padding: 30px 0;
+        .footer-left-container {
+          display: flex;
+          .footer-top-menu-wrapper {
+            .footer-top-menu {
+              padding-right: 40px;
+                .footer-top-menu-title {
+                  color: $footer_title_color;
+                  font-size: 22px;
+                  margin-bottom: 15px;
+                }
+                ul {
+                  list-style-type: none;
+                  margin-bottom: 20px;
+                  padding: 0;
+                  li {
+                    a {
+                      color: $footer_text_color;
+                      font-size: 12px;
+                      &:hover {
+                        color: $colorPrimary;
+                      }
+                    }
+                  }
+                }
+              }
+          }
+        }
+
+        .footer-copyright {
+          p {
+            color: $footer_text_color;
+            font-size: 12px;
+            margin: 0;
+            a {
+              color: $colorPrimary;
+            }
+          }
+        }
+      }
+      .footer-top-right {
+        width: 50%;
+        padding: 40px 0;
+        background-repeat: no-repeat;
+        background-position: right;
+      }
+    }
+
+  }
+  .footer-bottom {
+    background-color: $footer_bg_color;
+    padding: 30px 0;
+    .container {
+      display: flex;
+      .footer-bottom-left {
+        display: flex;
+        align-items: center;
+        width: 50%;
+        a {
+          color: #FFF;
+          background-color: transparent;
+          border: 2px solid $colorPrimary;
+          padding: 10px 15px;
+          &:hover {
+            background-color: $colorPrimary;
+          }
+        }
+      }
+      .footer-bottom-right {
+        display: flex;
+        justify-content: flex-end;
+        width: 50%;
+        .socials {
+          display: flex;
+          align-items: center;
+          h4 {
+            color: $colorPrimary;
+            margin-right: 20px;
+          }
+          .social-img {
+            margin-right: 20px;
+            &:hover a {
+              opacity: 0.5;
+            }
+          }
+        }
+      }
+    }
+  }
+}

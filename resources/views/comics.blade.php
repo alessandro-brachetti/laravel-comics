@@ -1,10 +1,12 @@
-@foreach ($comics as $comic)
-<div class="card">
-  <div class="card-img">
-    <img src="{{ $comic['thumb']}}" alt="">
+<div class="comics-wrapper">
+  @foreach ($comics as $comic)
+  <div class="card">
+    <div class="card-img">
+      <img src="{{ $comic['thumb']}}" alt="">
+    </div>
+    <div class="card-title uppercase">
+      <p> {{ $comic['series'] }}</p>
+    </div>
   </div>
-  <div class="card-title">
-    <h3> {{ $comic['title'] }}</h3>
-  </div>
+  @endforeach
 </div>
-@endforeach
