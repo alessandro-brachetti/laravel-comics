@@ -1,14 +1,24 @@
 @extends('layouts.app')
 @section('main')
-<div class="jumbo" style="background-image: url('/img/jumbotron.jpg')">
-
-</div>
 <section id="comics">
   <div class="container">
     <div class="title-section">
       <h2 class="uppercase"> current series</h2>
     </div>
-    @include('comics')
+    <div class="comics-wrapper">
+      @foreach ($comics as $index => $comic)
+      <a class="card" href="{{route('detail', ['id' => $index])}}">
+        <div >
+          <div class="card-img">
+            <img src="{{ $comic['thumb']}}" alt="">
+          </div>
+          <div class="card-title uppercase">
+            <p> {{ $comic['series'] }}</p>
+          </div>
+        </div>
+      </a>
+      @endforeach
+    </div>
   </div>
   <div class="button">
     <div class="btn-load">

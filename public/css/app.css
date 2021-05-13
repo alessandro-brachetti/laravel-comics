@@ -9,7 +9,12 @@ body {
 }
 
 .container {
-  max-width: 60%;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.small-container {
+  width: 50%;
   margin: 0 auto;
 }
 
@@ -80,8 +85,7 @@ header .header-bottom .container .navbar .search-bar input {
   padding: 10px;
   border-bottom: 2px solid #0282F9;
 }
-
-.jumbo {
+header .jumbo {
   background-position-x: center;
   background-size: cover;
   padding: 210px 0;
@@ -124,7 +128,9 @@ header .header-bottom .container .navbar .search-bar input {
      object-position: top;
 }
 #comics .container .comics-wrapper .card .card-title p {
+  color: #FFF;
   font-size: 14px;
+  font-weight: 700;
   margin-top: 10px;
 }
 #comics .button {
@@ -164,6 +170,215 @@ header .header-bottom .container .navbar .search-bar input {
   font-size: 14px;
   margin-left: 10px;
   color: #FFF;
+}
+
+#comic-thumb {
+  background-color: #0282F9;
+}
+#comic-thumb .comic-thumb-container {
+  position: relative;
+  padding: 40px 0;
+}
+#comic-thumb .comic-thumb-container .comic-thumb-wrapper {
+  position: absolute;
+  bottom: 20px;
+  border: 1px solid #fff;
+}
+#comic-thumb .comic-thumb-container .comic-thumb-wrapper span {
+  position: absolute;
+  background-color: #00A9D9;
+  color: #fff;
+  padding: 3px;
+  font-size: 12px;
+}
+#comic-thumb .comic-thumb-container .comic-thumb-wrapper span.comic-type {
+  top: 0;
+  left: 0;
+}
+#comic-thumb .comic-thumb-container .comic-thumb-wrapper span.comic-gallery {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+#comic-details {
+  padding: 60px 0 60px 0;
+}
+#comic-details .comic-info-wrapper {
+  display: flex;
+}
+#comic-details .comic-info-wrapper .comic-info {
+  width: calc(100%/3 * 2);
+  padding-top: 20px;
+}
+#comic-details .comic-info-wrapper .comic-info h1 {
+  font-size-adjust: auto;
+  color: #003f5e;
+  margin-bottom: 20px;
+}
+#comic-details .comic-info-wrapper .comic-info .comic-availability-wrapper {
+  background-color: #55ba59;
+  border-bottom: 1px solid #357739;
+  display: flex;
+}
+#comic-details .comic-info-wrapper .comic-info .comic-availability-wrapper .price-wrapper {
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+#comic-details .comic-info-wrapper .comic-info .comic-availability-wrapper .price-wrapper span {
+  font-size: 14px;
+  color: #bafd9c;
+}
+#comic-details .comic-info-wrapper .comic-info .comic-availability-wrapper .price-wrapper .comic-price {
+  color: #FFF;
+}
+#comic-details .comic-info-wrapper .comic-info .comic-availability-wrapper .check-availability {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  padding: 10px 10px;
+  border-left: 1px solid #357739;
+}
+#comic-details .comic-info-wrapper .comic-info .comic-availability-wrapper .check-availability span {
+  font-size: 14px;
+  color: #FFF;
+}
+#comic-details .comic-info-wrapper .comic-info .comic-description {
+  font-size: 14px;
+  line-height: 1.7;
+  font-weight: 500;
+  margin-top: 20px;
+  color: #5B646C;
+}
+#comic-details .comic-info-wrapper .comic-advertisement {
+  width: calc(100%/3);
+  padding-left: 30px;
+}
+#comic-details .comic-info-wrapper .comic-advertisement h4 {
+  text-align: right;
+  margin-bottom: 5px;
+  color: #555555;
+  font-weight: 600;
+}
+#comic-details .comic-info-wrapper .comic-advertisement .img-advertisement img {
+  width: 100%;
+}
+
+#comic-specs {
+  border-top: 1px solid #e3e3e3;
+  border-bottom: 1px solid #e3e3e3;
+  padding-bottom: 80px;
+}
+#comic-specs .small-container {
+  display: flex;
+}
+#comic-specs .small-container .talent {
+  width: calc(100%/2 - 20px);
+  margin-right: 40px;
+  padding: 20px 0;
+}
+#comic-specs .small-container .talent h2 {
+  font-size: 20px;
+  color: #003f5e;
+  margin-bottom: 20px;
+}
+#comic-specs .small-container .talent ul li {
+  display: flex;
+  border-top: 1px solid #e3e3e3;
+  padding: 5px 0;
+}
+#comic-specs .small-container .talent ul li:last-child {
+  border-bottom: 1px solid #e3e3e3;
+}
+#comic-specs .small-container .talent ul li span:first-child {
+  min-width: calc(100%/3);
+  max-width: calc(100%/3);
+  color: #003f5e;
+  font-size: 13px;
+}
+#comic-specs .small-container .talent ul li span:last-child {
+  font-size: 13px;
+}
+#comic-specs .small-container .talent ul li a {
+  color: #0282F9;
+  font-size: 12px;
+}
+#comic-specs .small-container .specs {
+  width: calc(100%/2 - 20px);
+  padding: 20px 0;
+}
+#comic-specs .small-container .specs h2 {
+  font-size: 20px;
+  color: #003f5e;
+  margin-bottom: 20px;
+}
+#comic-specs .small-container .specs ul li {
+  display: flex;
+  border-top: 1px solid #e3e3e3;
+  padding: 10px 0;
+}
+#comic-specs .small-container .specs ul li:last-child {
+  border-bottom: 1px solid #e3e3e3;
+}
+#comic-specs .small-container .specs ul li span:first-child {
+  min-width: calc(100%/3);
+  max-width: calc(100%/3);
+  color: #003f5e;
+  font-size: 13px;
+}
+#comic-specs .small-container .specs ul li .comic-series {
+  color: #0282F9;
+}
+#comic-specs .small-container .specs ul li span:last-child {
+  font-size: 13px;
+}
+
+#comic-utilities .icon-box-container {
+  display: flex;
+  padding: 5px 0;
+}
+#comic-utilities .icon-box-container .icon-box {
+  border-left: 1px solid #e3e3e3;
+  flex-grow: 1;
+  padding: 10px;
+}
+#comic-utilities .icon-box-container .icon-box:last-child {
+  border-right: 1px solid #e3e3e3;
+}
+#comic-utilities .icon-box-container .icon-box a {
+  font-size: 12px;
+  font-weight: 600;
+  color: #9f9f9f;
+  display: flex;
+  justify-content: space-between;
+}
+#comic-utilities .icon-box-image-1 {
+  background-image: url("/img/cta-icons.png");
+  width: 40px;
+  height: 37px;
+}
+#comic-utilities .icon-box-image-2 {
+  background-image: url("/img/cta-icons.png");
+  background-position: top right;
+  width: 40px;
+  height: 37px;
+}
+#comic-utilities .icon-box-image-3 {
+  background-image: url("/img/cta-icons.png");
+  background-position: 67% top;
+  width: 40px;
+  height: 37px;
+}
+#comic-utilities .icon-box-image-4 {
+  background-image: url("/img/cta-icons.png");
+  background-position: 35% top;
+  width: 40px;
+  height: 37px;
 }
 
 footer .footer-top {

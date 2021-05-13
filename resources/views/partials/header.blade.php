@@ -21,7 +21,7 @@
                   <a class="uppercase" href="#">Characters</a>
               </li>
               <li>
-                  <a class="uppercase active" href="#">Comics</a>
+                  <a class="uppercase {{ Route::currentRouteName() == 'home' || 'single' ? 'active': '' }}" href="/">Comics</a>
               </li>
               <li>
                   <a class="uppercase" href="#">Movies</a>
@@ -55,5 +55,8 @@
         </div>
       </div>
     </div>
+  </div>
+  <div class="jumbo" style="background-image: url('/img/jumbotron.jpg')">
+
   </div>
 </header>
